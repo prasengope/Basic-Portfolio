@@ -5,53 +5,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="portfolio.html" />
+    <link rel="stylesheet" href="contact.html" />
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
     <link rel="stylesheet" href="assests/css/style.css" />
     <title>About Me!</title>
   </head>
 
   <body>
-    <div id="content">
-      <header id="full-header">
-        <div id="header-content">
-          <div id="logo">
-            <h1>Prasen Gope</h1>
-          </div>
-
-          <nav>
-            <a href="index.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-          </nav>
-        </div>
-      </header>
-      </header>
-
-      <br> <br> <br> <br> <br>
-
-      <div id="main-content">
-        <h1>Contact</h1>
-
-        <hr>
-        
-        <div id="form">
-          <label for="name">Name</label> <br />
-          <input type="text" id="name" placeholder="John Smith" /> <br/><br>
-
-          <label for="email">Email</label> <br />
-          <input type="email" name="" id="email" placeholder="example@gmail.com" />
-          <br /> <br>
-
-          <label for="message">Message</label> <br />
-          <textarea id="message"></textarea><br/><br> 
-
-          <button type="submit" id="submit">Submit</button>
-        </div>
+    <header> <!--header-->
+      <div class="content">
+        <h1>Prasen Gope</h1>
+        <nav>
+          <a href="index.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <footer>
+    <section class="content"> <!--main body, the middle part-->
+      <h2>Contact</h2>
+      <form> <!--form for name, email and message-->
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="John Smith" />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="example@gmail.com" />
+        <label for="message">Message</label>
+        <textarea name="message" id="message"></textarea>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </section>
+
+    <div class="clearfix"></div>
+
+    <footer> <!--footer-->
       <p>Copyright &copy; Prasen Gope</p>
     </footer>
   </body>
-
 </html>

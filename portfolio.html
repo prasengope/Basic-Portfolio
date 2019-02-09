@@ -1,73 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="portfolio.html" />
+    <link rel="stylesheet" href="contact.html" />
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
     <link rel="stylesheet" href="assests/css/style.css" />
     <title>About Me!</title>
   </head>
 
   <body>
-    <div id="content">
-      <header id="full-header">
-        <div id="header-content">
-          <div id="logo">
-            <h1>Prasen Gope</h1>
-          </div>
+    <header> <!--header-->
+      <div class="content">
+        <h1>Prasen Gope</h1>
+        <nav>
+          <a href="index.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-          <nav>
-            <a href="index.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-          </nav>
+    <section class="content"> <!--portfolio-->
+      <h2>Portfolio</h2>
+
+      <div id="container"> <!--portfolio items are in anchor tags and images will be their backgrounds-->
+        <div class="port-item" id="item1">
+          <a class="portfolio" href="#">Hangman</a>
         </div>
-      </header>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+        <div class="port-item" id="item2">
+          <a href="#">RPG Game</a>
+        </div>
 
-      <div id="main-content">
-        <h1>Portfolio</h1>
+        <div class="port-item" id="item3">
+          <a href="#">Trivia Game</a>
+        </div>
 
-        <hr />
-        <div id="container">
-          <div class="img-holder">
-            <img class="image" src="http://lorempixel.com/400/200" alt="" />
-            <h4>Hangman</h4>
-          </div>
+        <div class="port-item" id="item4">
+          <a href="#">Rutgers Info Widgets</a>
+        </div>
 
-          <div class="img-holder">
-            <img class="image" src="http://lorempixel.com/g/400/200" alt="" />
-            <h4>RPG Game</h4>
-          </div>
-
-          <div class="img-holder">
-            <img
-              class="image"
-              src="http://lorempixel.com/400/200/sports"
-              alt=""/>
-            <h4>Trivia Game</h4>
-          </div>
-
-          <div class="img-holder">
-            <img class="image" src="http://lorempixel.com/400/200/sports/1" alt=""/>
-            <h4>Rutgers Info Widget</h4>
-          </div>
-
-          <div class="img-holder">
-            <img class="image" src="http://lorempixel.com/400/200/sports/Dummy-Text" alt=""/>
-            <h4>Rock Paper Scissors</h4>
-          </div>
+        <div class="port-item" id="item5">
+          <a href="#">Rock Paper Scissors</a>
         </div>
       </div>
-    </div>
+    </section>
 
-    <footer>
+    <div class="clearfix"></div>
+
+    <footer> <!--footer-->
       <p>Copyright &copy; Prasen Gope</p>
     </footer>
   </body>
+
 </html>
