@@ -50,6 +50,11 @@ nav a:last-child{
     padding-right: 0;
 }
 
+nav a:hover{
+    color: #4aaaa5;
+    /* background:  */
+}
+
 section{
     background: #ffffff;
     border: 1px solid #dddddd;
@@ -110,6 +115,10 @@ form button{
     padding: 10px 30px;
 }
 
+button:hover{
+    transform: scale(1.2);
+}
+
 
                                                 /* all classes */
 .content{
@@ -131,6 +140,10 @@ form button{
     height: 250px;
     margin-bottom: 25px;
     opacity: 0.85;
+}
+
+.port-item:hover{
+    opacity: 1;
 }
 
 .port-item:nth-of-type(even){
